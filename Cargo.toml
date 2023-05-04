@@ -1,0 +1,20 @@
+[package]
+name = "httprs"
+version = "0.1.0"
+edition = "2021"
+description = "HTTP server and client"
+license = "MIT or Appache-2"
+repository = "https://github.com/nlargueze/httprs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+thiserror = "1.0.40"
+async-trait = "0.1.68"
+
+[dev-dependencies]
+h2 = "0.3.18"
+http = "0.2.9"
+hyper = { version = "1.0.0-rc.3", features = ["full"] }
+http-body-util = "0.1.0-rc.2"
